@@ -1,7 +1,7 @@
 <img src = "imagen/gold.jpg" width="200" height="200">
 
 
-# data-cleaning-pandas
+# Gold-Project
 Gold price, news and other variables!
 
 
