@@ -1,0 +1,13 @@
+Data
+**/.DS_Store
+**/*.ipynb_checkpoints/
+**/__pycache__
+
+XAUUSD.csv
+chromedriver.exe
+gold_clean.csv
+fed_clean.csv
+news_clean.csv
+news_base2.csv
+fed-funds-rate-historical-chart.csv
+

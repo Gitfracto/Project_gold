@@ -1,2 +1,1 @@
-# Project_gold
-segundo proyecto
+# gold-news
