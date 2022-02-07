@@ -1,14 +1,15 @@
-<img src = "imagen/tiburon.jpg" width="200" height="200">
+<img src = "imagen/gold.jpg" width="200" height="200">
 
 
 # data-cleaning-pandas
-Are shark sexist and attack more females than male!?
+Gold price, news and other variables!
 
-The objective of this file is to clean a very convoluted raw data set with an astonishing amount of useless columns and rows that, after a deep cleaning, provides 6,000 rows of useful data that will be used to answer our hypothesis from the starting 27,000 rows.
+
+The objective of this file is to create a MongoDB database that can produce queries linking three different dictionaries linked with the gold commodity
 
 # Readme structure:
 
-1) Our goals and hypothesis regarding shark attacks.
+1) Our goals
 2) Our data cleaning proccess.
 
 ## Goals
@@ -16,58 +17,48 @@ The objective of this file is to clean a very convoluted raw data set with an as
 <img src = "imagen/goal.png" width="200" height="100">
 
 
-This repository has a very clear goals divided into 4 mini hypothesis:
+This repository goal is to practice how to extract, transform and load data (ETL). 
 
-1. Sharks fatal attacks are more recurrent on women than men.
-2. Surfing related activities have the highest fatality ratio.
-3. Shark attacks have a strong relationshi with the age of the those attacked.
-4. There is at least one group of activities that provoke the sharks more than others.
+### Extract Data
+We used three different sources for our data:
+[www.dukascopy.com](https://www.dukascopy.com/) We downloaded a csv with the gold prices.
+[www.macrotrends.net](https://www.macrotrends.net/) We downloaded a csv with the U.S. monthly interest rate.
+[www.reuters.com](https://www.reuters.com/) We scraped the webpage for daily news regarding the gold commodity.
 
-Inside the **visualization** file you will be able to see the hypothesis results
+### Transform Data
 
-## Data cleaning
-<img src = "imagen/data_cleaning.png" width="100" height="100">
+We used different libraries to transform our data. We will disclose them in the tech stack area of this readme.
+You can follow the step by step code in any of the jupyter noteebooks of this repository.
 
-### Raw data set
+### Load Data
 
-Source:Kaggle
-Raw data set name: Global Shark Attacks
-The raw data set that we used contains different encounters between humans and sharks that resulted in unfortunate attacks.
-
-The cleaning of this data set was done in different steps that we will mention briefly, but they are shown in dept in the **cleaning_data** file.
-
-Cleaning steps:
-
-1. Import all libraries.
-2. Change column names.
-3. We dropped repeated and useless columns with no data (full of nan).
-4. We cleaned the columns that will be used to validate our hypothesis.
-5. We exported the clean data base.
-
-The cleaned data that we used for the **visualization** file is the **tiburon_hipotesis.csv** file. 
+We decided to load the data using MongoDB instead of relational db like mySQL. The main reason was to practice MongoDB structure and queries.
 
 ## Tech stack 
 
--[numpy as np](https://numpy.org/doc/)
-
--[pandas as pd](https://pandas.pydata.org/docs/)
-
--[seaborn as sns](https://seaborn.pydata.org/introduction.html)
-
--[matplotlib.pyplot as plt](https://matplotlib.org/)
+-[pandas](https://pandas.pydata.org/docs/)
 
 -[re](https://docs.python.org/3/library/re.html)
 
--[collections import Counter](https://docs.python.org/3/library/collections.html) 
+[requests](https://docs.python-requests.org/en/latest/)
 
--[operator import itemgetter](https://docs.python.org/3/library/operator.html)
+[bs4](https://pypi.org/project/beautifulsoup4/)
 
+[json](https://docs.python.org/3/library/json.html)
+
+[selenium](https://selenium-python.readthedocs.io/)
+
+[os](https://docs.python.org/3/library/os.html)
+
+[time](https://docs.python.org/3/library/time.html)
+
+[datetime](https://docs.python.org/3/library/datetime.html)
 
 
 ## SRC Folder
 <img src = "imagen/python.png" width="200" height="100">
 
 
-Inside this folder you will be able to hace all the functions that we created in order to clean the data. Some are super cool so check it out!
+Inside this folder you will be able to hace all the functions that we created in order to clean the data.!
 
 Hope you enjoy the files :)
